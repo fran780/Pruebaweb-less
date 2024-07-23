@@ -1,0 +1,54 @@
+.carusel {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 1000;
+    margin: 0 auto;
+  
+    .caruseltrack {
+      position: relative;
+      display: flex;
+      width: max-content;
+      height: 400px;
+  
+      .caruselItem {
+        position: relative;
+        width: 100vw;
+  
+        img {
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+    }
+  
+    .navigator {
+      width: 100vw;
+      background-color: transparent;
+      display: flex;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      z-index: 1001;
+      padding: 1rem;
+  
+      .dot {
+        width: 9px;
+        height: 9px;
+        background-color: #00ccff;
+        border: 1px solid @primary-color;
+        border-radius: 50%;
+        margin: 0px 1rem;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+    }
+  }
